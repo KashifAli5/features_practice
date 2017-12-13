@@ -1,0 +1,16 @@
+name =  feature blog article
+description = feature blog practice
+core = 7.x
+package = Features
+dependencies[] = views
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:2
+features[node][] = block_article
+features[views_view][] = feature_blog
+features_exclude[dependencies][ctools] = ctools
+features_exclude[dependencies][features] = features
+features_exclude[dependencies][image] = image
+features_exclude[field_base][body] = body
+features_exclude[field_base][field_images3] = field_images3
+features_exclude[field_instance][node-block_article-body] = node-block_article-body
+features_exclude[field_instance][node-block_article-field_images3] = node-block_article-field_images3
